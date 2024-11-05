@@ -17,7 +17,10 @@ class GameOfLife
 
   def loop
     puts "----------loop----------"
-    @input
+    # works with CLI
+    # input
+    # works with rspec
+    input
 
   end
 
@@ -31,4 +34,3 @@ class GameOfLife
 end
 
 gol = GameOfLife.new
-gol.loop
