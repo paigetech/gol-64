@@ -1,6 +1,6 @@
 # Game of Life Prompt (due two days prior to Broad Tech Interview)
 # example input
-echo -e "#Life 1.06\n0 1\n1 2\n2 0\n2 1\n2 2\n-2000000000000 -2000000000000\n-2000000000001 -2000000000001\n-2000000000000 -2000000000001" | ruby gol.rb
+echo -e "#Life 1.06\n0 1\n1 2\n2 0\n2 1\n2 2\n-2000000000000 -2000000000000\n-2000000000001 -2000000000001\n-2000000000000 -2000000000001" | ruby run.rb
 
 
 ## Implement Conway's Game of Life in 64-bit signed integer space.
