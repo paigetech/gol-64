@@ -1,9 +1,10 @@
 # Conways Game of Life, 1.06 in Ruby
-This is my attempt at implementing the Game of Life within roughly 3 hours for the Riot take home interview excercise.
+This is my attempt at implementing the Game of Life within roughly 3 hours for the Riot take home interview exercise.
 
 In writing this, I have made a few strong choices:
 - I decided to implement using a sparse matrix approach to avoid running through massive grids
-- I am leaning on the fact that ruby integers are well suited to handling 64 bit signed integers and it is a language I am comfortable with
+- The game sets a board boundary based on the initial input so we don't face an infinitely expanding board problem
+- I am leaning on the fact that ruby integers are well suited to handling 64 bit signed integers
 - I wrote this in a mostly TDD driven manner since I am somewhat rusty and this has been a great tool for me to keep things clear and bug free (or at least bug light)
 
 To use this, pass the standard format to `run.rb` via standard input. This will output a `64.life` file which represents 10 generations of the game. 
@@ -58,11 +59,3 @@ Your program should read the state of the simulation from standard input, run 10
 Please don’t spend more than 3 hours on your solution. Feel free to allocate that time in a manner that works best for your schedule. You may work in any language you prefer.
 
 We're most interested in both the technical aspects of how you deal with very large integers and how you go about solving the problem. At the onsite, be prepared to discuss your solution, including the choices and tradeoffs you made. Though not required, you are welcome to bring a laptop with you to your interview to walk us through the code.
-
-# Paige Notes
-
-use the provided cords to make the board size
-
-1.) read "standard input"
-
-n.) output coords of alive cells in .life format
